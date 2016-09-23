@@ -1,0 +1,53 @@
+.app-button{
+  width: 150px;
+  height: 50px;
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: solid;
+}
+
+.play-button {
+  width: 750px;
+  height: 50px;
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.clear-add {
+  width: 375px;
+  height: 50px;
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: solid;
+}
+
+.container-container {
+  position: fixed;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.debug {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width: 750px;
+  word-wrap: break-word;
+}
+
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./background.png");
+  vertical-align: middle;
+}
+
+canvas {
+  background-color: black;
+}

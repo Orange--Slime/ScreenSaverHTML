@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>ScreenSaver</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./ScreenSaverStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body onload="fillButtons()">
+	<div class="container-container container-fluid">
+		<div class="container">
+			<canvas id="myCanvas" height="499" width="750">
+				<script id="myScript" src="./ScreenSaverMeat.js" type="text/javascript"></script>
+			</canvas>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					<button type="button" class="play-button" id="playPause" onclick="onClick(this)">Play</button>
+				</div>
+				<div class="container">
+					<button type="button" class="app-button" id="Orange" onclick="colorClicked(this)" ></buton>
+					<button type="button" class="app-button" id="Red" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Blue" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Green" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Yellow" onclick="colorClicked(this)"></buton>
+				</div>
+				<div class="container">
+					<button type="button" class="app-button" id="DarkCyan" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Aqua" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="BlanchedAlmond" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Magenta" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Brown" onclick="colorClicked(this)"></buton>
+				</div>
+				<div class="container">
+					<button type="button" class="app-button" id="ForestGreen" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Chocolate" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Salmon" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="SaddleBrown" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="PaleGoldenRod" onclick="colorClicked(this)"></buton>
+				</div>
+				<div class="container">
+					<button type="button" class="app-button" id="Sienna" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Gainsboro" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Fuchsia" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="Orchid" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="LightSteelBlue" onclick="colorClicked(this)"></buton>
+				</div>
+				<div class="container">
+					<button type="button" class="app-button" id="OrangeRed" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="YellowGreen" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="BlueViolet" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="DarkViolet" onclick="colorClicked(this)"></buton>
+					<button type="button" class="app-button" id="White" onclick="colorClicked(this)"></buton>
+				</div>
+				<div class="container">
+					<button type="button" class="clear-add" id="clear" onclick="clearColors()">Clear colors.</button>
+					<button type="button" class="clear-add" id="add" onclick="addAllColors()" style="float: left">Add all colors.</button>
+				</div>
+				<div class="container">
+					<button type="button" class="play-button" id=debugButton onclick="toggleDebug(this)">Disable debug menu.</button>
+				</div>
+				<div class="container">
+					<p id="debugParagraph" class="debug">Black
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
